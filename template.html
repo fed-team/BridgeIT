@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template.min.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="Btn1 Btn">
+            Normal
+        </div>
+        <div class="Btn2 Btn">
+            Normal
+        </div>
+        <div class="Btn3 Btn">
+            Normal
+        </div>
+        <div class="Btn4 Btn">
+            Normal
+        </div>
+        <div class="Btn5 Btn">
+            Normal
+        </div>
+        <div class="Btn6 Btn">
+            Normal
+        </div>
+    </section>
+</body>
+<script>
+    var buttons = document.querySelectorAll(".Btn");
+    buttons.forEach(function (button) {
+        button.addEventListener("mouseover", function () {
+            this.innerHTML = "HOVER"
+        });
+        button.addEventListener("mouseout", function () {
+            this.innerHTML = "NORMAL"
+        });
+    });
+
+
+</script>
+
+</html>
