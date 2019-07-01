@@ -1,0 +1,54 @@
+.btn {
+  border: none;
+  color: $white;
+  padding: 10px 50px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 2px;
+  &--primary {
+    background: $primary;
+    &:hover {
+      background: $primaryh;
+    }
+  }
+  &--secondary {
+    background: $secondary;
+    &:hover {
+      background: $secondaryh;
+    }
+  }
+  &--primaryOut {
+    background: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+      border: 2px solid $primaryh;
+      color: $primaryh;
+    }
+  }
+  &--secondaryOut {
+    background: transparent;
+    color: $secondary;
+    border: 2px solid $secondary;
+    &:hover {
+      border: 2px solid $secondaryh;
+      color: $secondaryh;
+    }
+  }
+  &--primarySmall {
+    background: $primary;
+    padding: 5px 20px;
+    &:hover {
+      background: $primaryh;
+    }
+  }
+  &--secondarySmall {
+    background: $secondary;
+    padding: 5px 20px;
+    &:hover {
+      background: $secondaryh;
+    }
+  }
+}

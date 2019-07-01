@@ -1,5 +1,5 @@
 <template>
-  <button>{{btnValue}}</button>
+  <button class="btn btn--secondary">{{btnValue}}</button>
 </template>
 
 <script>
@@ -11,19 +11,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/style/colors.scss";
-
-button {
-  background: $secondary;
-  color: $white;
-  border: none;
-  padding: 10px 50px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.3s;
-  cursor: pointer;
-  border-radius: 2px;
-  &:hover {
-    background: $secondaryh;
-  }
-}
+@import "@/assets/style/button.scss";
 </style>
