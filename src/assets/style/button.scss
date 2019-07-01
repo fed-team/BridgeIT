@@ -1,7 +1,8 @@
 .btn {
   border: none;
   color: $white;
-  padding: 10px 50px;
+  min-width: 160px;
+  height: 50px;
   font-size: 14px;
   font-weight: 600;
   transition: 0.3s;
@@ -37,18 +38,20 @@
       color: $secondaryh;
     }
   }
-  &--primarySmall {
-    background: $primary;
-    padding: 5px 20px;
-    &:hover {
-      background: $primaryh;
-    }
-  }
-  &--secondarySmall {
-    background: $secondary;
-    padding: 5px 20px;
-    &:hover {
-      background: $secondaryh;
-    }
-  }
+  // &--primarySmall {
+  //   background: $primary;
+  //   min-width: 90px;
+  //   height: 30px;
+  //   &:hover {
+  //     background: $primaryh;
+  //   }
+  // }
+  // &--secondarySmall {
+  //   background: $secondary;
+  //   min-width: 90px;
+  //   height: 30px;
+  //   &:hover {
+  //     background: $secondaryh;
+  //   }
+  // }
 }

@@ -1,12 +1,6 @@
 <template>
   <div id="app">
     <h1>BridgeIT</h1>
-    <Primary btnValue="Zaloguj się"/>
-    <Secondary btnValue="Zarejestruj się"/>
-    <PrimaryOut btnValue="Zarejestruj się"/>
-    <SecondaryOut btnValue="Zarejestruj się"/>
-    <PrimarySmall btnValue="Zarejestruj się"/>
-    <SecondarySmall btnValue="Zarejestruj się"/>
   </div>
 </template>
 <script>
