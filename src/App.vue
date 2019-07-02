@@ -1,10 +1,17 @@
 <template>
   <div id="app">
     <h1>BridgeIT</h1>
+    <PageHeader />
+    <PrimaryButton />
   </div>
 </template>
 <script>
-export default {};
+import PageHeader from "@/components/PageHeader"
+export default {
+  components: {
+    PageHeader
+  }
+};
 </script>
 
 <style lang="scss">
