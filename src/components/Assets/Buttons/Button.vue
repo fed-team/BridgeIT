@@ -1,11 +1,11 @@
 <template>
-  <button :class="btnClass" class="btn">{{btnValue}}</button>
+  <button :class="vclass" class="btn">{{value}}</button>
 </template>
 
 <script>
 export default {
   name: "PrimaryButton",
-  props: ["btnValue", "btnClass"]
+  props: ["value", "vclass"]
 };
 </script>
 
