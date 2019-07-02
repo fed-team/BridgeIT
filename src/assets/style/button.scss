@@ -24,8 +24,8 @@
     color: $primary;
     border: 2px solid $primary;
     &:hover {
-      border: 2px solid $primaryh;
-      color: $primaryh;
+      background-color: $primaryh;
+      color: $white;
     }
   }
   &--secondaryOut {
