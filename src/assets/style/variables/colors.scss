@@ -3,17 +3,18 @@
 $white: #fff;
 
 // 50 shades of Grey
-$grey-1: #f2f6fa;
-$grey-2: #dadfe9;
-$grey-3: #96a2ba;
-$grey-4: #505a78;
-$grey-5: #3c374b;
-$grey-6: #35344c;
+$grey-1: #f9f9f9;
+$grey-2: #e3e6eb;
+$grey-3: #c1c6d1;
+$grey-4: #a1a7b5;
+$grey-5: #717787;
+$grey-6: #423e51;
+$grey-7: #27263e;
 
 // Main Color of Our project (Primary Color - primary, Primary Color on Hover - primaryh)
 
-$primary: #2339c4;
-$primaryh: #1a2ca2;
+$primary: #435bd4;
+$primaryh: #334abe;
 
 // Secondary Color of Our project (Secondary Color - secondary, Secondary Color on Hover - secondaryh)
 
@@ -22,5 +23,6 @@ $secondaryh: #ee6c3d;
 
 // Action Colors (Correct - correct, Error - error)
 
-$correct: #2be56f;
-$error: #e52b38;
+$warning: #ffc737;
+$correct: #26de95;
+$error: #ec4e4e;
