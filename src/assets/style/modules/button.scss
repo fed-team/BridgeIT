@@ -41,7 +41,7 @@
     background: transparent;
     color: $grey-3;
     border: 2px solid $grey-3;
-    cursor: default;
+    cursor: no-drop;
     &:hover {
       background: transparent;
       color: $grey-3;
@@ -54,7 +54,7 @@
   background: $grey-3;
   border: 2px solid $grey-3;
   color: $white;
-  cursor: default;
+  cursor: no-drop;
   &:hover {
     background: $grey-3;
     border: 2px solid $grey-3;
