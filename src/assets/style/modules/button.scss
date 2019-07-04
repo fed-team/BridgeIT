@@ -6,17 +6,16 @@
   font-weight: 600;
   transition: 0.3s;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 5px;
+  border: 2px solid $primary;
+  &:focus {
+    outline: none;
+  }
   &--primary {
     background: $primary;
     &:hover {
       background: $primaryh;
-    }
-  }
-  &--secondary {
-    background: $secondary;
-    &:hover {
-      background: $secondaryh;
+      border: 2px solid $primaryh;
     }
   }
   &--primaryOut {
@@ -28,29 +27,46 @@
       color: $primaryh;
     }
   }
-  &--secondaryOut {
+}
+
+.outline {
+  background: transparent;
+  color: $primary;
+  &:hover {
     background: transparent;
-    color: $secondary;
-    border: 2px solid $secondary;
+    color: $primaryh;
+    border: 2px solid $primaryh;
+  }
+  &--disabled {
+    background: transparent;
+    color: $grey-3;
+    border: 2px solid $grey-3;
+    cursor: default;
     &:hover {
-      border: 2px solid $secondaryh;
-      color: $secondaryh;
+      background: transparent;
+      color: $grey-3;
+      border: 2px solid $grey-3;
     }
   }
-  // &--primarySmall {
-  //   background: $primary;
-  //   min-width: 90px;
-  //   height: 30px;
-  //   &:hover {
-  //     background: $primaryh;
-  //   }
-  // }
-  // &--secondarySmall {
-  //   background: $secondary;
-  //   min-width: 90px;
-  //   height: 30px;
-  //   &:hover {
-  //     background: $secondaryh;
-  //   }
-  // }
+}
+
+.disabled {
+  background: $grey-3;
+  border: 2px solid $grey-3;
+  color: $white;
+  cursor: default;
+  &:hover {
+    background: $grey-3;
+    border: 2px solid $grey-3;
+    color: $white;
+  }
+}
+
+.medium {
+  min-width: 145px;
+  height: 40px;
+}
+.small {
+  min-width: 100px;
+  height: 30px;
 }
