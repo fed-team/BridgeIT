@@ -1,11 +1,9 @@
-var element = document.getElementById('menu');
-document.getElementById('icon-heart').onclick = function(){
-
-    if (element.className = 'hide'){
-    element.className = 'show';
+document.getElementById('buttonToogle').onclick = function(){
+  var menu = document.getElementById("menuToogle");
+  if (menu.className === "hide") {
+    menu.className += " show";
   }
-    else{
-    element.className = 'hide';
-    document.getElementById('menu').className = 'show';
+  else {
+    menu.className = "hide";
   }
 }

@@ -8,20 +8,27 @@ body{
   font-size: 62.5%;
 }
 
-.flexWrapper {
+.menuIcon{
+  display: none;
+}
+
+.menuWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   background: green;
 }
 
-.menuIcon{
-  display: none;
+.menuItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .menuItem a, li{
@@ -32,61 +39,9 @@ body{
   color: black;
 }
 
-.flexMenu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.flexBetween{
+.menuButtonBox{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-
-
-@media (max-width: 768px) {
-  .hide{
-    display: none;
-  }
-
-  .show{
-    display: block;
-  }
-
-  .menuIcon {
-    width: 100%;
-    background: green;
-    display: block;
-    font-size: 3rem;
-  }
-
-  .flexWrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .topLogo {
-
-  }
-
-  .menuItem {
-
-  }
-
-  .flexMenu{
-    flex-direction: column;
-  }
-
-  .flexRow{
-
-  }
-
-  .flexBetween {
-    justify-content: space-between;
-    width: 80%;
-  }
 }
