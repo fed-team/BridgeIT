@@ -6,6 +6,11 @@ font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
+
 .pricesWrap {
     height: 100vh;
     width: clac(1920px - 20px);
@@ -15,7 +20,6 @@ font-family: 'Roboto', sans-serif; */
 main {
     margin: 0 auto;
     height: 716px;
-    /* width: 1001px; */
     width: 1133px
 }
 
@@ -30,20 +34,20 @@ main {
 .choosePlan h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
+    font-size: 3.2rem;
     margin-bottom: 15px;
     margin-top: 151px;
     color: #3C374B;
     font-weight: 600;
 }
 
-span.blue {
+span.textBlue {
     color: #2339C4;
 }
 
 .choosePlan p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     color: #505A78;
 }
@@ -52,6 +56,7 @@ span.blue {
 
 .container {
     display: flex;
+    justify-content: space-between;
     margin-top: 117px;
     margin-bottom: 322px;
 }
@@ -62,20 +67,10 @@ span.blue {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 8%);
 }
 
-.price:nth-of-type(1) {
-    margin: 0 65px;
-    /* margin-right: 130px; */
-}
-
-.price:nth-of-type(2) {
-    margin-right: 65px;
-    /* margin-right: 130px; */
-
-}
 
 /* in cloumn */
 
-.logo {
+.priceLogo {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -85,7 +80,7 @@ span.blue {
 }
 
 p {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
@@ -105,7 +100,7 @@ p.priceBold {
 p.priceMoney {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 17px;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     color: #2339C4;
 }
@@ -119,18 +114,13 @@ button.priceStart {
     width: 157px;
     height: 45px;
     margin: 10px 66px 24px 66px;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
-button.priceStartMiddle {
+button.middle {
     background-color: #2339C4;
     border: 1px solid #2339C4;
     color: white;
-    border-radius: 2px;
-    width: 157px;
-    height: 45px;
-    margin: 10px 66px 24px 66px;
-    font-size: 14px;
-    font-weight: 600;
 }
