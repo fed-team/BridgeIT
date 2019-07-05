@@ -15,8 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/style/colors.scss";
-@import "@/assets/style/typography.scss";
+@import "@/assets/style/modules/button.scss";
 body {
   padding: 0;
   margin: 0;

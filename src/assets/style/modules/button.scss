@@ -1,0 +1,72 @@
+.btn {
+  border: none;
+  color: $white;
+  min-width: 160px;
+  height: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid $primary;
+  &:focus {
+    outline: none;
+  }
+  &--primary {
+    background: $primary;
+    &:hover {
+      background: $primaryh;
+      border: 2px solid $primaryh;
+    }
+  }
+  &--primaryOut {
+    background: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+      border: 2px solid $primaryh;
+      color: $primaryh;
+    }
+  }
+}
+
+.outline {
+  background: transparent;
+  color: $primary;
+  &:hover {
+    background: transparent;
+    color: $primaryh;
+    border: 2px solid $primaryh;
+  }
+  &--disabled {
+    background: transparent;
+    color: $grey-3;
+    border: 2px solid $grey-3;
+    cursor: no-drop;
+    &:hover {
+      background: transparent;
+      color: $grey-3;
+      border: 2px solid $grey-3;
+    }
+  }
+}
+
+.disabled {
+  background: $grey-3;
+  border: 2px solid $grey-3;
+  color: $white;
+  cursor: no-drop;
+  &:hover {
+    background: $grey-3;
+    border: 2px solid $grey-3;
+    color: $white;
+  }
+}
+
+.medium {
+  min-width: 145px;
+  height: 40px;
+}
+.small {
+  min-width: 100px;
+  height: 30px;
+}
