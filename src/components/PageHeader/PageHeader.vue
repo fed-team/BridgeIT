@@ -5,8 +5,8 @@
       class="page-header__paragraph"
     >Z naszym narzędziem oszczędzimy Ci masę czasu! Załóż bezpłatne konto i sprawdź jakie to łatwe.</p>
     <div class="page-header__buttons">
-      <Button value="Normal" />
-      <Button class="outline" vclass="btn--primaryOut" value="Normal" />
+      <Button value="Sprawdź" />
+      <Button class="outline" value="Kontakt" />
     </div>
   </header>
 </template>
@@ -16,20 +16,20 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/style/variables/colors.scss";
 .page-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 165px;
-  padding: 110px 0;
+  justify-content: center;
+  margin-top: 160px;
+  height: 512px;
   background-color: $grey-1;
 
   &__header {
     text-align: center;
     max-width: 714px;
     margin-bottom: 13px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 120%;
   }
@@ -38,7 +38,6 @@ export default {
     text-align: center;
     max-width: 470px;
     margin-bottom: 53px;
-    font-size: 16px;
     color: $grey-4;
   }
 
@@ -49,7 +48,6 @@ export default {
   }
 
   &__btn {
-    font-size: 14px;
     &--main {
       margin-right: 30px;
     }
