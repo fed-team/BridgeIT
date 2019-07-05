@@ -1,14 +1,18 @@
+
 @media (max-width: 768px) {
-  .hide{
+  .hide, .displayNoneMenu{
     display: none;
   }
 
-  .show{
-    display: block;
+  .displayShowMenu {
     background: green;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
   }
 
   .menuIcon {
@@ -20,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
   }
 
   .menuIcon button {

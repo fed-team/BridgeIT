@@ -1,9 +1,9 @@
-document.getElementById('buttonToogle').onclick = function(){
-  var menu = document.getElementById("menuToogle");
-  if (menu.className === "hide") {
-    menu.className += " show";
+document.getElementById('buttonToggle').onclick = function(){
+  var menu = document.getElementById("menuToggle");
+  if (menu.className === "displayNoneMenu") {
+    menu.className = "displayShowMenu";
   }
   else {
-    menu.className = "hide";
+    menu.className = "displayNoneMenu";
   }
 }
