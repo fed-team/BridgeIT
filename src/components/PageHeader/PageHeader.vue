@@ -5,6 +5,7 @@
       class="page-header__paragraph"
     >Z naszym narzędziem oszczędzimy Ci masę czasu! Załóż bezpłatne konto i sprawdź jakie to łatwe.</p>
     <div class="page-header__buttons">
+
       <Button value="Sprawdź" />
       <Button class="outline" value="Kontakt" />
     </div>
