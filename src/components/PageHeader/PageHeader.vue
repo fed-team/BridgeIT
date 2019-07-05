@@ -14,7 +14,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import "@/assets/style/colors.scss";
+  @import "@/assets/style/variables/colors.scss";
   .page-header {
     display: flex;
     flex-direction: column;
