@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <PageHeader />
+    <Hero />
   </div>
 </template>
 <script>
-import PageHeader from "@/components/PageHeader/PageHeader";
+import Hero from "@/components/Molecules/Hero";
 
 export default {
   components: {
-    PageHeader
+    Hero
   }
 };
 </script>

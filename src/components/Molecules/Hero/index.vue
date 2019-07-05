@@ -1,11 +1,10 @@
 <template>
   <header class="page-header">
-    <h1 class="page-header__header">Porzuć niewygdne narzędzia i stertę notatek!</h1>
+    <h1 class="page-header__header">Porzuć niewygodne narzędzia i stertę notatek!</h1>
     <p
       class="page-header__paragraph"
     >Z naszym narzędziem oszczędzimy Ci masę czasu! Załóż bezpłatne konto i sprawdź jakie to łatwe.</p>
     <div class="page-header__buttons">
-
       <Button value="Sprawdź" />
       <Button class="outline" value="Kontakt" />
     </div>
@@ -13,10 +12,10 @@
 </template>
 <script>
 export default {
-  name: "PageHeader"
+  name: "Hero"
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" scoped src="./">
 .page-header {
   display: flex;
   flex-direction: column;
