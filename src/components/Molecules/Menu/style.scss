@@ -1,0 +1,103 @@
+.menuIcon {
+  display: none;
+}
+.fas {
+  color: $primary;
+  font-size: 50px;
+}
+.displayNoneMenu,
+.displayShowMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: $white;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  a:first-child li {
+    color: $primary;
+    transition: 0.3s;
+    &:hover {
+      color: $primaryh;
+    }
+  }
+  a,
+  li {
+    list-style: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    &:hover {
+      color: $grey-7;
+    }
+  }
+}
+
+.menuButtonBox {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@include res(tablet) {
+  .hide,
+  .displayNoneMenu {
+    display: none;
+  }
+
+  .displayShowMenu {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .menuIcon {
+    width: 100%;
+    background: $white;
+    display: block;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+
+  .menuIcon .hamburgerMenu {
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menuLogo {
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 20px;
+  }
+
+  .menuItem {
+    flex-direction: column;
+  }
+  .menuButtonBox {
+    padding-bottom: 20px;
+  }
+}

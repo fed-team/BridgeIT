@@ -29,8 +29,14 @@ h5 {
 
 // Text sizes
 p,
-span {
+span,
+a,
+div {
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {

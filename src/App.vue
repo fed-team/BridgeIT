@@ -1,14 +1,16 @@
 <template>
   <div id="app">
+    <Menu />
     <Hero />
   </div>
 </template>
 <script>
 import Hero from "@/components/Molecules/Hero";
-
+import Menu from "@/components/Molecules/Menu";
 export default {
   components: {
-    Hero
+    Hero,
+    Menu
   }
 };
 </script>
