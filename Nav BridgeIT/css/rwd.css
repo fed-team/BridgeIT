@@ -1,0 +1,50 @@
+
+@media (max-width: 768px) {
+  .hide, .displayNoneMenu{
+    display: none;
+  }
+
+  .displayShowMenu {
+    background: green;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+  }
+
+  .menuIcon {
+    width: 100%;
+    height: 5rem;
+    background: green;
+    display: block;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+  }
+
+  .menuIcon button {
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+
+  .menuLogo {
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+
+  .menuItem {
+    flex-direction: column;
+  }
+
+  .menuButtonBox {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+}
