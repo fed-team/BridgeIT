@@ -1,5 +1,8 @@
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+@import: "colors";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,6 @@ font-family: 'Roboto', sans-serif; */
 html {
     font-size: 10px;
 }
-
 
 .pricesWrap {
     height: 100vh;
@@ -29,30 +31,27 @@ main {
     width: 613px;
     height: 141px;
     margin: 0 auto;
-}
 
-.choosePlan h1 {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.2rem;
-    margin-bottom: 15px;
-    margin-top: 151px;
-    color: #3C374B;
-    font-weight: 600;
-}
-
-span.textBlue {
-    color: #2339C4;
-}
-
-.choosePlan p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    //text-align: center;
-    color: #505A78;
-    p{
-        //
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        //text-align: center;
+        color: $grey;
     }
+
+    h1 {
+        text-align: center;
+        //font-family: 'Poppins', sans-serif;
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+        margin-top: 151px;
+        color: $darkGrey;
+        font-weight: 600;
+    }
+}
+
+.textBlue {
+    color: $blue;
 }
 
 /* three column */
@@ -70,6 +69,43 @@ span.textBlue {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 8%);
     margin-left: auto;
     margin-right: auto;
+
+
+    .priceBold {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 0px;
+        //font-family: 'Poppins', sans-serif;
+        color: $grey;
+        font-weight: 600;
+    }
+
+    .priceMoney {
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 17px;
+        font-size: 1.4rem;
+        text-align: center;
+        color: $blue;
+    }
+    .priceStart {
+        background-color: $white;
+        border: 1px solid $blue;
+        color: $blue;
+        border-radius: 2px;
+        padding: 12px 38px;
+        width: 157px;
+        height: 45px;
+        margin: 10px 66px 24px 66px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    .middle {
+        background-color: $blue;
+        border: 1px solid $blue;
+        color: $white;
+    }
 }
 
 
@@ -80,7 +116,7 @@ span.textBlue {
     height: 90px;
     border-radius: 50%;
     margin: 24px auto 17px auto;
-    background-color: #DADFE9;
+    background-color: $cream;
     /* background-image: url(); */
 }
 
@@ -90,44 +126,7 @@ p {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     font-weight: normal;
-    color: #505A78;
-}
-
-p.priceBold {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 0px;
-    font-family: 'Poppins', sans-serif;
-    color: #505A78;
-    font-weight: 600;
-}
-
-p.priceMoney {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 17px;
-    font-size: 1.4rem;
-    text-align: center;
-    color: #2339C4;
-}
-
-button.priceStart {
-    background-color: #fff;
-    border: 1px solid #2339C4;
-    color: #2339C4;
-    border-radius: 2px;
-    padding: 12px 38px;
-    width: 157px;
-    height: 45px;
-    margin: 10px 66px 24px 66px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button.middle {
-    background-color: #2339C4;
-    border: 1px solid #2339C4;
-    color: white;
+    color: $grey;
 }
 
 @media (max-width:768px){
