@@ -66,28 +66,11 @@ btn.forEach((clickDot, indexDot) => {
       sliders[positionMid].style.transition = transitionTime;
       sliders[positionLeft].style.transition = transitionTime;
     }
+
     sliders[positionMid].classList.add("comments__element--position-mid");
     sliders[positionRight].classList.add("comments__element--position-right");
     sliders[positionLeft].classList.add("comments__element--position-left");
 
-    console.log(
-      `${
-        window
-          .getComputedStyle(sliders[positionLeft])
-          .getPropertyValue("transform")
-          .match(/(-?[0-9\.]+)/g)[4]
-      } ${
-        window
-          .getComputedStyle(sliders[positionMid])
-          .getPropertyValue("transform")
-          .match(/(-?[0-9\.]+)/g)[4]
-      } ${
-        window
-          .getComputedStyle(sliders[positionRight])
-          .getPropertyValue("transform")
-          .match(/(-?[0-9\.]+)/g)[4]
-      }`
-    );
     return startInterval(timeSlide, 4000);
   });
 });

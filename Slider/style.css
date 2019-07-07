@@ -47,7 +47,7 @@ body {
 
 .comments__list {
   width: 800px;
-  min-height: 80px;
+  min-height: 90px;
   margin: 58px 0 0;
   padding: 0;
   position: relative;
@@ -108,7 +108,7 @@ body {
 }
 
 .comments__element--position-right {
-  transform: translateX(200%);
+  transform: translateX(100%);
 }
 .comments__element--position-mid {
   transform: translateX(-50%);
