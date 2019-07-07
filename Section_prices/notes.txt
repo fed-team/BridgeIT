@@ -1,0 +1,1 @@
+poprawie to jeszcze, bo cos chyba zle sie skaluje i przerobie tego css na scss
