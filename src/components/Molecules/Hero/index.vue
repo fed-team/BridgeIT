@@ -5,8 +5,8 @@
       class="page-header__paragraph"
     >Z naszym narzędziem oszczędzimy Ci masę czasu! Załóż bezpłatne konto i sprawdź jakie to łatwe.</p>
     <div class="page-header__buttons">
-      <Button value="Sprawdź" />
-      <Button class="outline" value="Kontakt" />
+      <Button class="page-header__btn page-header__btn--main" value="Sprawdź" />
+      <Button class="outline page-header__btn page-header__btn" value="Kontakt" />
     </div>
   </header>
 </template>
@@ -15,5 +15,4 @@ export default {
   name: "Hero"
 };
 </script>
-<style lang="scss" scoped src="./style.scss">
-</style>
+<style lang="scss" scoped src="./style.scss" />
