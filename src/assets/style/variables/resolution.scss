@@ -1,12 +1,12 @@
 $breakpoints: (
   "mobile": (
-    max-width: 375px
+    min-width: 375px
   ),
   "tablet": (
-    max-width: 768px
+    min-width: 768px
   ),
   "desktop": (
-    min-width: 769px
+    min-width: 1200px
   )
 );
 @mixin res($name) {
