@@ -1,16 +1,10 @@
 <template>
   <div id="app">
-    <PageHeader />
+    <h1>BridgeIT</h1>
   </div>
 </template>
 <script>
-import PageHeader from "@/components/PageHeader/PageHeader";
-
-export default {
-  components: {
-    PageHeader
-  }
-};
+export default {};
 </script>
 
 <style lang="scss">
