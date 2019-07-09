@@ -1,0 +1,18 @@
+//Container styles for all project
+.container {
+  @include res(mobile) {
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  @include res(tablet) {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 30px;
+  }
+  @include res(laptop) {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+}
