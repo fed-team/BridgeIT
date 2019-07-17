@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="container">
     <h1>BridgeIT</h1>
-    <div class="asd">asd</div>
   </div>
 </template>
 <script>
