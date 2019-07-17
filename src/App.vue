@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <h1>BridgeIT</h1>
   </div>
 </template>
@@ -12,8 +12,5 @@ export default {};
 body {
   padding: 0;
   margin: 0;
-}
-.asd {
-  background: red;
 }
 </style>
