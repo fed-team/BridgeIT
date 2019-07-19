@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <h1>BridgeIT</h1>
+    <Navi/>
   </div>
 </template>
 <script>
-export default {};
+import Navi from '@/components/nav.vue';
+export default {
+  name: "App",
+  components: {
+    Navi
+  }
+};
 </script>
 
 <style lang="scss">
@@ -12,5 +18,7 @@ export default {};
 body {
   padding: 0;
   margin: 0;
+  background-color:#f2f6fa;
 }
+
 </style>
