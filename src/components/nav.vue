@@ -1,29 +1,29 @@
 <template>
- <div class="nav-wrapper">
+ <div class="nav_wrapper">
 
-    <div class="nav-changer">
+    <div class="nav_changer">
      <p>Home</p>
-     <p class="active" >Workspace</p>
+     <p class="active">Workspace</p>
      <p>Others</p>
     </div>
 
-    <div class="nav-iconbox">
-      <img src="http://serwer1982875.home.pl/img-bright/search_icon.svg" alt="search icon">
+    <div class="nav_iconbox">
+      <img src="http://serwer1982875.home.pl/img-bright/search_iconn.svg" alt="search icon">
       <img src="http://serwer1982875.home.pl/img-bright/star_icon.svg" alt="star icon">
       <img src="http://serwer1982875.home.pl/img-bright/today_icon.svg" alt="today icon">
       <img src="http://serwer1982875.home.pl/img-bright/chat_icon.svg" alt="chat icon">
       <img src="http://serwer1982875.home.pl/img-bright/notifications_icon.svg" alt="notifications icon">
     </div>
 
-    <div class="nav-user">
-     <div class="user-imgWrap"><img v-bind:src="imgUser" alt=""></div> 
+    <div class="nav_user">
+     <div class="user_imgWrap"><img v-bind:src="imgUser" alt=""></div> 
        <div>
-        <p> <span class="user-name">{{name}}</span>
+        <p> <span class="user_name">{{name}}</span>
            {{role}}</p>
        </div>
-        <img src="http://serwer1982875.home.pl/img-bright/more_icon.svg" alt="">
-      <div class="user-dropmenu">
-        <div class="dropmenu-grid">
+        <img v-on:click="switchDropMenu += 1"  src="http://serwer1982875.home.pl/img-bright/more_icon.svg" alt="more icon">
+      <div v-if="switchDropMenu = switchDropMenu % 2"  class="user_dropmenu">
+        <div class="dropmenu_grid">
           <p class="bold">BridgeIt</p>
           <p></p>
           <p>Users</p>
@@ -34,8 +34,8 @@
           <p>Boards</p>
         </div>
 
-      <div class="dropmenu-grid">
-        <p class="text-color bold">{{name}}</p>
+      <div class="dropmenu_grid">
+        <p class="text_color bold">{{name}}</p>
         <p></p>
         <p>Teams</p>
         <p>Calendar</p>
@@ -44,8 +44,8 @@
         <p>Projects</p>
         <p></p>
       </div>
-      <div class="btn--primary small">
-        <p> Log Out</p>
+      <div class="btn--primary dropmenu_btn">
+        <p class="bold"> Log Out</p>
       </div>
       </div>
     </div>
@@ -59,12 +59,14 @@ export default {
       name: "John Smith",
       role: "Front-end",
       imgUser: "",
+      switchDropMenu:"",
     }
   },
 };
 </script>
 
 <style lang="scss" scoped>
+$colorBlue:#2339C4;
 @mixin flexNavItem ($wh ,$ml){
   display:flex;
   justify-content: space-between;
@@ -72,64 +74,68 @@ export default {
   width:$wh;
   margin-left:$ml;
 } 
-
-
-$colorBlue:#2339C4 ;
+@mixin flexCenter{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 *{
   box-sizing: border-box ;
 }
-.nav-wrapper{
+.nav_wrapper{
   height:100px;
   width:100vw;
   top:0px;
   left:0px;
   padding: 0 100px 0 780px;
   position: absolute;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  @include flexCenter()
   background-color:white;
   border: 1px solid #DADFE9;
 }
-.nav-changer{
+.nav_changer{
   @include flexNavItem(354px,0px)
   font-weight:600;
   p{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    @include flexCenter()
     height:100px;
-    width: 158px;
   }
 }
-.nav-iconbox{
+.nav_iconbox{
   @include flexNavItem(258px,120px)
+  img{
+    max-height:20px;
+    max-width:20px;
+  }
+  img:hover{
+ filter: invert(17%) sepia(92%) saturate(2461%) hue-rotate(226deg) brightness(98%) contrast(97%);
+   transition:.5s;
+  }
 }
-.nav-user{
+
+.nav_user{
    @include flexNavItem(175px,125px)
   align-items:center;
   line-height: 20px;
   position: relative;
 }
-.user-imgWrap{
+.user_imgWrap{
   min-height:40px;
   min-width:40px;
   background-color:#DADFE9;
   border-radius: 50%;
   margin-right:10px;
   overflow: hidden;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+ @include flexCenter()
     img{
       height:40px;
       width:40px;
     }
 }
-.user-name{
+.user_name{
   font-weight:600;
 }
-.user-dropmenu{
+.user_dropmenu{
   position:absolute;
   height:375px;
   width:300px;
@@ -139,7 +145,10 @@ $colorBlue:#2339C4 ;
   border: 1px solid #DADFE9;
   padding: 25px 30px ;
 }
-.dropmenu-grid{
+.user_dropmenu--close{
+display:none;
+}
+.dropmenu_grid{
   height:120px;
   width:100%;
   margin-bottom:20px;
@@ -151,6 +160,15 @@ $colorBlue:#2339C4 ;
     padding:0px;
   }
 }
+.dropmenu_btn{
+  width:90px !important;
+  max-height:30px;
+  @include flexCenter()
+  p{
+  color:white !important;
+  line-height: 0px;
+  }
+}
 .active{
   min-width:158px;
   border-top: 5px solid $colorBlue;
@@ -158,9 +176,8 @@ $colorBlue:#2339C4 ;
 }
 .bold{
   font-weight:600;
-  
 }
-.text-color{
+.text_color{
   color:$colorBlue;
 }
 @media (max-width:1200px) {}
