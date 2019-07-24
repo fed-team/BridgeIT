@@ -6,8 +6,18 @@ body,
 *,
 html {
   font-size: 62.5%;
-  color: $grey-6;
+  color: $default;
   font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading;
 }
 
 // Heading sizes
@@ -25,6 +35,9 @@ h4 {
 }
 h5 {
   font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.4rem;
 }
 
 // Text sizes
