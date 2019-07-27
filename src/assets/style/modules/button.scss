@@ -8,23 +8,11 @@
   cursor: pointer;
   border-radius: 5px;
   border: 2px solid $primary;
-  &:focus {
-    outline: none;
-  }
   &--primary {
     background: $primary;
     &:hover {
       background: $primaryh;
       border: 2px solid $primaryh;
-    }
-  }
-  &--primaryOut {
-    background: transparent;
-    color: $primary;
-    border: 2px solid $primary;
-    &:hover {
-      border: 2px solid $primaryh;
-      color: $primaryh;
     }
   }
 }
@@ -39,25 +27,25 @@
   }
   &--disabled {
     background: transparent;
-    color: $grey-3;
-    border: 2px solid $grey-3;
+    color: $default;
+    border: 2px solid $default;
     cursor: no-drop;
     &:hover {
       background: transparent;
-      color: $grey-3;
-      border: 2px solid $grey-3;
+      color: $default;
+      border: 2px solid $default;
     }
   }
 }
 
 .disabled {
-  background: $grey-3;
-  border: 2px solid $grey-3;
+  background: $default;
+  border: 2px solid $default;
   color: $white;
   cursor: no-drop;
   &:hover {
-    background: $grey-3;
-    border: 2px solid $grey-3;
+    background: $default;
+    border: 2px solid $default;
     color: $white;
   }
 }

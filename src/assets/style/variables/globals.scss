@@ -1,4 +1,11 @@
 //Container styles for all project
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   @include res(mobile) {
     margin: 0 auto;

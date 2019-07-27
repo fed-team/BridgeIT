@@ -16,7 +16,7 @@
     </div>
 
     <div class="nav_user">
-     <div class="user_imgWrap"><img v-bind:src="imgUser" alt=""></div> 
+     <div class="user_imgWrap"><img v-bind:src="imgUser" alt="profil"></div> 
        <div>
         <p> <span class="user_name">{{name}}</span>
            {{role}}</p>
