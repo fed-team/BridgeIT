@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import Navi from '@/components/nav.vue';
+import Navigation from '@/components/nav.vue';
 export default {
   components: {
     Navigation
