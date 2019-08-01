@@ -9,18 +9,22 @@
   cursor: pointer;
   border-radius: 5px;
   border: 2px solid $primary;
+
   &--primary {
     background: $primary;
+
     &:hover {
       background: $primaryh;
       border: 2px solid $primaryh;
     }
+
     &:active {
       background: $primarya;
       border: 2px solid $primarya;
     }
   }
 }
+
 // .outline {
 //   background: transparent;
 //   &:hover {
@@ -41,11 +45,13 @@
   background: $default;
   border: 2px solid $default;
   cursor: no-drop;
+
   &:hover {
     background: $default;
     border: 2px solid $default;
   }
 }
+
 .small {
   min-width: 120px;
   height: 40px;

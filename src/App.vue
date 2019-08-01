@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <h1>BridgeIT</h1>
+    <Navigation/>
   </div>
 </template>
 <script>
-export default {};
+import Navigation from '@/components/nav.vue';
+export default {
+  components: {
+    Navigation
+  }
+}
 </script>
 
 <style lang="scss">
-@import "@/assets/style/modules/button.scss";
+body {
+  padding: 0;
+  margin: 0;
+  background-color:#f2f6fa;
+}
+
 </style>
