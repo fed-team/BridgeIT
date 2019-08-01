@@ -89,7 +89,7 @@ p{
   width:100vw;
   top:0px;
   left:0px;
-  padding: 0 100px 0 780px;
+  padding: 0 50px 0 40vw;
   position: absolute;
   @extend .flexCenter ; 
   background-color:white;
@@ -115,7 +115,7 @@ p{
 }
 }
 .nav_iconbox{
-  @include flexNavItem(258px,120px)
+  @include flexNavItem(258px,5vw)
   img{
     max-height:20px;
     max-width:20px;
@@ -127,7 +127,7 @@ p{
 }
 
 .nav_user{
-   @include flexNavItem(175px,125px)
+   @include flexNavItem(225px,5vw)
   align-items:center;
   line-height: 20px;
   position: relative;
@@ -192,8 +192,26 @@ display:none;
 .text_color{
   color:$secondary;
 }
-@media (max-width:1200px) {}
-@media (max-width: 768px) {}
-@media (max-width:375px) {}
+@media (min-width:1500px) {
+  .nav_user{max-width:170px;}
+}
+@media (max-width:1200px) {
+.nav_wrapper{}
+.nav_changer{}
+.nav_iconbox{}
+.nav_user{}
+}
+@media (max-width: 768px) {
+  .nav_wrapper{}
+  .nav_iconbox{ @include flexNavItem(175px,0px)}
+.nav_changer{   @include flexNavItem(175px,0px)}
+.nav_user{   @include flexNavItem(175px,0px)}
+}
+@media (max-width:375px) {
+  .nav_wrapper{}
+  .nav_iconbox{ @include flexNavItem(175px,0px)}
+.nav_changer{   @include flexNavItem(175px,0px)}
+.nav_user{   @include flexNavItem(175px,0px)}
+}
 
 </style>
