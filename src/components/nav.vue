@@ -146,10 +146,10 @@ p{
     }
 }
 .user_more{
- transform:rotate(90deg);
+ transform:rotate(180deg);
 }
 .activeMore{
-  transform:rotate(0deg);
+  transform:rotate(90deg);
 }
 .user_name{
   font-weight:600;
