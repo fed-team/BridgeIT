@@ -53,7 +53,7 @@
 </template>
 <script>
 export default {
-  name: "Navi",
+  name: "Navigation",
   data() {
     return {
       name: "John Smith",
