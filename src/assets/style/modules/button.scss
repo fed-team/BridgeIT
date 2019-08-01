@@ -1,61 +1,59 @@
 .btn {
   border: none;
-  color: $white;
-  min-width: 160px;
+  color: $dark;
+  min-width: 180px;
+  padding: 0 40px;
   height: 50px;
   font-weight: 600;
   transition: 0.3s;
   cursor: pointer;
   border-radius: 5px;
   border: 2px solid $primary;
+
   &--primary {
     background: $primary;
+
     &:hover {
       background: $primaryh;
       border: 2px solid $primaryh;
     }
-  }
-}
 
-.outline {
-  background: transparent;
-  color: $primary;
-  &:hover {
-    background: transparent;
-    color: $primaryh;
-    border: 2px solid $primaryh;
-  }
-  &--disabled {
-    background: transparent;
-    color: $default;
-    border: 2px solid $default;
-    cursor: no-drop;
-    &:hover {
-      background: transparent;
-      color: $default;
-      border: 2px solid $default;
+    &:active {
+      background: $primarya;
+      border: 2px solid $primarya;
     }
   }
 }
 
+// .outline {
+//   background: transparent;
+//   &:hover {
+//     background: transparent;
+//     border: 2px solid $primaryh;
+//   }
+//   &--disabled {
+//     background: transparent;
+//     border: 2px solid $default;
+//     cursor: no-drop;
+//     &:hover {
+//       background: transparent;
+//       border: 2px solid $default;
+//     }
+//   }
+// }
 .disabled {
   background: $default;
   border: 2px solid $default;
-  color: $white;
   cursor: no-drop;
+
   &:hover {
     background: $default;
     border: 2px solid $default;
-    color: $white;
   }
 }
 
-.medium {
-  min-width: 145px;
-  height: 40px;
-}
 .small {
-  min-width: 100px;
-  height: 30px;
-
+  min-width: 120px;
+  height: 40px;
+  padding: 0 12px;
 }

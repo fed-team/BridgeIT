@@ -2,9 +2,9 @@
  <div class="nav_wrapper">
 
     <div class="nav_changer">
-     <p>Home</p>
-     <p class="active">Workspace</p>
-     <p>Others</p>
+     <div><p>Home</p></div>
+     <div  class="active"><p>Workspace</p></div>
+     <div><p>Others</p></div>
     </div>
 
     <div class="nav_iconbox">
@@ -18,10 +18,10 @@
     <div class="nav_user">
      <div class="user_imgWrap"><img v-bind:src="imgUser" alt="profil"></div> 
        <div>
-        <p> <span class="user_name">{{name}}</span>
+        <p> <span class="user_name bold">{{name}}</span>
            {{role}}</p>
        </div>
-        <img v-on:click="switchDropMenu += 1"  src="http://serwer1982875.home.pl/img-bright/more_icon.svg" alt="more icon">
+        <img class="user_more" v-on:click="switchDropMenu += 1" :class="{ activeMore: switchDropMenu  = switchDropMenu % 2  }"  src="http://serwer1982875.home.pl/img-bright/more_icon.svg" alt="more icon">
       <div v-if="switchDropMenu = switchDropMenu % 2"  class="user_dropmenu">
         <div class="dropmenu_grid">
           <p class="bold">BridgeIt</p>
@@ -35,7 +35,7 @@
         </div>
 
       <div class="dropmenu_grid">
-        <p class="text_color bold">{{name}}</p>
+        <p class="bold text_color">{{name}}</p>
         <p></p>
         <p>Teams</p>
         <p>Calendar</p>
@@ -44,8 +44,8 @@
         <p>Projects</p>
         <p></p>
       </div>
-      <div class="btn">
-        <p class="bold"> Log Out</p>
+      <div class="btn--primary small">
+         Log Out
       </div>
       </div>
     </div>
@@ -66,7 +66,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$colorBlue:#2339C4;
 @mixin flexNavItem ($wh ,$ml){
   display:flex;
   justify-content: space-between;
@@ -82,6 +81,9 @@ $colorBlue:#2339C4;
 *{
   box-sizing: border-box ;
 }
+p{
+ color: #505A78;
+}
 .nav_wrapper{
   height:100px;
   width:100vw;
@@ -96,10 +98,21 @@ $colorBlue:#2339C4;
 .nav_changer{
   @include flexNavItem(354px,0px)
   font-weight:600;
+  div{
+    height:100px;
+    @extend .flexCenter ;
+  }
   p{
    @extend .flexCenter ; 
-    height:100px;
+    color:#26263A;
   }
+  .active{
+  min-width:158px;
+  border-top: 5px solid $secondary;
+  p{
+  color:$secondary;
+  }
+}
 }
 .nav_iconbox{
   @include flexNavItem(258px,120px)
@@ -132,6 +145,12 @@ $colorBlue:#2339C4;
       width:40px;
     }
 }
+.user_more{
+ transform:rotate(90deg);
+}
+.activeMore{
+  transform:rotate(0deg);
+}
 .user_name{
   font-weight:600;
 }
@@ -140,10 +159,13 @@ $colorBlue:#2339C4;
   height:375px;
   width:300px;
   background-color:white;
-  top:85px;
+  top:70px;
   left:-125px;
   border: 1px solid #DADFE9;
   padding: 25px 30px ;
+}
+.small{
+  max-width:90px;
 }
 .user_dropmenu--close{
 display:none;
@@ -159,18 +181,16 @@ display:none;
     margin:0px;
     padding:0px;
   }
-}
-
-.active{
-  min-width:158px;
-  border-top: 5px solid $colorBlue;
-  color:$colorBlue;
+  p:hover{
+    color:$secondary;
+  }
 }
 .bold{
   font-weight:600;
+  color:#505A78;
 }
 .text_color{
-  color:$colorBlue;
+  color:$secondary;
 }
 @media (max-width:1200px) {}
 @media (max-width: 768px) {}
