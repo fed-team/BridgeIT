@@ -44,7 +44,7 @@
         <p>Projects</p>
         <p></p>
       </div>
-      <div class="btn--primary dropmenu_btn">
+      <div class="btn">
         <p class="bold"> Log Out</p>
       </div>
       </div>
@@ -74,7 +74,7 @@ $colorBlue:#2339C4;
   width:$wh;
   margin-left:$ml;
 } 
-@mixin flexCenter{
+.flexCenter{
   display:flex;
   justify-content:center;
   align-items:center;
@@ -89,7 +89,7 @@ $colorBlue:#2339C4;
   left:0px;
   padding: 0 100px 0 780px;
   position: absolute;
-  @include flexCenter()
+  @extend .flexCenter ; 
   background-color:white;
   border: 1px solid #DADFE9;
 }
@@ -97,7 +97,7 @@ $colorBlue:#2339C4;
   @include flexNavItem(354px,0px)
   font-weight:600;
   p{
-    @include flexCenter()
+   @extend .flexCenter ; 
     height:100px;
   }
 }
@@ -126,7 +126,7 @@ $colorBlue:#2339C4;
   border-radius: 50%;
   margin-right:10px;
   overflow: hidden;
- @include flexCenter()
+ @extend .flexCenter ; 
     img{
       height:40px;
       width:40px;
@@ -160,15 +160,7 @@ display:none;
     padding:0px;
   }
 }
-.dropmenu_btn{
-  width:90px !important;
-  max-height:30px;
-  @include flexCenter()
-  p{
-  color:white !important;
-  line-height: 0px;
-  }
-}
+
 .active{
   min-width:158px;
   border-top: 5px solid $colorBlue;
